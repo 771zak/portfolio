@@ -6,6 +6,10 @@ export const HeaderContainer = Styled.div`
 	display: flex;
 	align-items: center;
 	justify-content: space-evenly;
+	position: sticky;
+	top: 0;
+	background-color: ${props => props.scrolled ? `rgba(14, 21, 58, .9)` : ""};
+
 	.nav {
 		width: 40%;
 		height: 100%;
@@ -43,7 +47,7 @@ export const HeaderContainer = Styled.div`
 	.themetoggle, .dark {
 		width: 60px;
 		height: 30px;
-		background: #333;
+		background: #555;
 		display: flex;
 		align-items: center;
 		border-radius: 20px;
@@ -52,21 +56,22 @@ export const HeaderContainer = Styled.div`
 		.handle {
 			width: 40%;
 			height: 70%;
-			background: #999;
-			border-radius: 10px;
 			margin: 0 10%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img {
+				width: 100%;
+				height: auto;
+			}
 		}
 	}
 	.light {
 		justify-content: flex-end;
-		.handle {
-			background: yellow;
-		}
-
 	}
 	.burgerMenu {
 		display: none;
-		width: 40px;
+		width: 35px;
 		height: 30px;
 		flex-direction: column;
 		justify-content: space-around;
