@@ -6,7 +6,7 @@ export const RoutesAnimation = {
 	visible: {
 		opacity: 1,
 		x: 0,
-		transition: {duration: 1}
+		transition: {delay: .5, duration: 1}
 	},
 	exit: {
 		x: '100vw',

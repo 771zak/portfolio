@@ -4,6 +4,7 @@ import {RoutesAnimation} from "./RoutesAnimation";
 import CodeSvg from "../components/CodeSvg";
 import {HomeContainer} from "../components/style/HomeContainer.style";
 
+
 const Home = () => {
 	return (
 
@@ -14,8 +15,16 @@ const Home = () => {
 			exit="exit"
 		>
 			<div className="landing">
-				<h2>hello from Home</h2>
-				<CodeSvg />
+				<div className="landing-bio">
+					<h1>Hello, I'm <span>Zak</span></h1>
+					<p>
+						I’m a frontend developer,
+						from <a href="#" target="_blank">Khenchela, Algeria.</a> 
+						Interested in building interactive & modern websites.
+						<a href="/contact">Contact me</a> for work.
+					</p>
+				</div>
+				<CodeSvg/>
 			</div>
 			<div className="skills">
 			</div>

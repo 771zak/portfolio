@@ -18,7 +18,7 @@ export const HeaderContainer = Styled.div`
 		justify-content: space-evenly;
 
 		a {
-			color: ${props => props.theme.text};
+			color: ${props => props.theme.second};
 			text-decoration: none;
 			padding: 10px;
 			border-radius: 10px;
