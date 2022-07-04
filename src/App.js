@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {Container} from "./components/style/Container.style";
 import Header from "./components/Header";
 import Home from "./routes/Home";
@@ -62,6 +62,15 @@ const App = () => {
 	const [theme, setTheme] = useState(true);
 
 	const location = useLocation();
+
+	useEffect(() => {
+		const prevTheme = JSON.parse(localStorage.getItem("theme"));
+		setTheme(prevTheme)
+	}, [])
+
+	useEffect(() => {
+		localStorage.setItem("theme", theme)
+	}, [theme])
 
 	const themeToggler = () => {
 		setTheme(!theme)

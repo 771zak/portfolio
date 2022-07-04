@@ -1,5 +1,5 @@
 import React from "react";
-import {motion} from "framer-motion";
+// import {motion} from "framer-motion";
 import {RoutesAnimation} from "./RoutesAnimation";
 import CodeSvg from "../components/CodeSvg";
 import {HomeContainer} from "../components/style/HomeContainer.style";

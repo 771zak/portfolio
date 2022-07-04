@@ -12,10 +12,11 @@ export const HomeContainer = Styled(motion.div)`
 		height: 93vh;
 		display: flex;
 		justify-content: space-around;
+		align-items: center;
 		flex-wrap: wrap;
 
 		.codeSvg {
-			width: 200px;
+			width: 600px;
 		}
 	}
 
