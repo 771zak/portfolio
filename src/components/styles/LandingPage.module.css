@@ -1,0 +1,14 @@
+.container {
+	width: 100vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	flex-direction: column;
+}
+
+.name {
+	font-size: 9em;
+	padding: 13% 0;
+	float: left;
+}
